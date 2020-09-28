@@ -4,6 +4,7 @@ import { Route, Link } from 'react-router-dom'
 import { getFiles } from './store/actions/files'
 import ListView from './components/ListView'
 import EditView from './components/EditView'
+import LoginForm from './components/LoginForm'
 import { RootState, FilesState } from './types'
 
 const App = () => {
@@ -31,8 +32,12 @@ const App = () => {
       <Link style={padding} to="/filelist">
         File listing
       </Link>
+      <Link style={padding} to="/login">
+        Login
+      </Link>
       <Route exact path="/filelist" component={ListView} />
       <Route path="/edit" component={EditView} />
+      <Route exact path="/login" component={LoginForm} />
     </div>
   )
 }
