@@ -1,10 +1,6 @@
 
 /*
 
-// App info
-//const CLIENT_ID = "Iv1.e8426b3c0727bfb5"
-//const CLIENT_SECRET =  "60ed1f1c3ab76fd50e84a72e2257122b9132ab30"
-
 app.get('/', (_req: any, res: any) => {
     res.send('<h1>Hello World!</h1>')
 })
